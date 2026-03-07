@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Menu from "./Menu";
 import Modal from '@mui/material/Modal';
 import cateringPDF from '../images/CateringMenu25.pdf';
@@ -28,7 +28,7 @@ function Header(props) {
   }
   // const getopenhours = () => {
   //   var request = {
-  //     placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
+  //     placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY44',
   //     fields: ['name', 'opening_hours']
   //   };
   //   var service = new window.google.maps.places.PlacesService(document.createElement('div'));
