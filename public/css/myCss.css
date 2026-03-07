@@ -1,0 +1,62 @@
+.splash {
+    background: #EEAF3D;
+ }
+
+.foodItem {
+    FONT-WEIGHT: bold;
+    font-family:  'poppins-black';
+ }
+
+.foodDesc {
+    font-size: small;
+    font-family:  'poppins-black';
+ }
+
+.foodTitle {
+    font-family: 'poppins-black';
+    FONT-SIZE: larger;
+
+ }
+
+.FullTitle {
+    text-align: center;
+    color:white;
+    font-family:  'poppins-black';
+ }
+
+ .menuOverall{
+     background-color: black;
+     color: white;
+     padding:20px
+ }
+ .foodGroup{
+    padding: 10px 5px 10px 5px;
+ }
+
+ .titleDetail{
+     font-size: x-small;
+ }
+
+ .exitIcon{
+    position: 'absolute';
+    right:'0%';
+    color: white;
+  }
+
+
+  .menubutton{
+    text-transform: uppercase;
+    font-family: "poppins-black";
+    letter-spacing: 3px;
+    color: #23201C;
+    background: #F8E7CA;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+    border-radius: 0px;
+  }
+
+  .address {
+      font-weight: bolder;
+  }

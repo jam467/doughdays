@@ -1,0 +1,3 @@
+sam package --s3-bucket storagecompiler --region ap-southeast-2 --output-template-file template-export.yml
+
+sam deploy --template-file template-export.yml --region ap-southeast-2 --stack-name storagecompiler --capabilities CAPABILITY_IAM

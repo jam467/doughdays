@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cutlunch-dev-104226-authRole",
+      "UnauthRoleArn": "arn:aws:iam::159769365658:role/amplify-cutlunch-dev-104226-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::159769365658:role/amplify-cutlunch-dev-104226-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-cutlunch-dev-104226-deployment",
+      "UnauthRoleName": "amplify-cutlunch-dev-104226-unauthRole",
+      "StackName": "amplify-cutlunch-dev-104226",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:159769365658:stack/amplify-cutlunch-dev-104226/f4005250-9cdd-11ec-a68a-0648f7399e46",
+      "AmplifyAppId": "dcsnc5364q4q7"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dcsnc5364q4q7",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}

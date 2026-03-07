@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'notification
+
+  Sample SAM Template for notification
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  notification:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://emailercl.prod/50d69bcae0e07dafca8673efbc2b5b72
+      Handler: app.lambdaHandler
+      Runtime: nodejs16.x
+      MemorySize: 512
+      Timeout: 300
+      Role: arn:aws:iam::159769365658:role/Cutlunchlamnda
+      Events:
+        HttpPost:
+          Type: HttpApi
+          Properties:
+            Path: /email
+            Method: post
+    Metadata:
+      SamResourceId: notification

@@ -1,0 +1,29 @@
+.reservation-container {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center everything */
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.reservation-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.reservation-widget {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px; /* limits widget width on large screens */
+}
+
+.reservation-widget iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none;
+}
