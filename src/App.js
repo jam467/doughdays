@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import heroImage from "./images/RAW-140-Edit_IsabellaWild.jpg";
-import stockistsPdf from "./images/CateringMenu25.pdf";
+
+const stockistsPdf = "https://cldimages.s3.ap-southeast-2.amazonaws.com/Stockists.pdf";
 
 const introCopy =
   "The first ever Dough Days cookie was baked at the centre of our universe, Cut Lunch Deli in Clovelly. It sells out every day, never leaves our menu and has now entered its shelf life as ready-to-bake cookie dough scoops with the same chewy insides and perfectly crispy shell.";
