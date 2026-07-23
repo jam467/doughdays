@@ -98,6 +98,13 @@ img {
 		linear-gradient(180deg, #ff6a24 0%, #ee5418 100%);
 }
 
+.dd-page-stockists {
+	background:
+		radial-gradient(circle at top right, rgba(255, 195, 120, 0.18), transparent 24%),
+		linear-gradient(180deg, #fff0df 0%, #ffd6a3 100%);
+	color: var(--dd-brown);
+}
+
 .dd-page-main {
 	padding-top: 5.5rem;
 }
@@ -166,6 +173,11 @@ img {
 	min-height: calc(100vh - 5.5rem);
 }
 
+.dd-section-stockists-page {
+	min-height: calc(100vh - 5.5rem);
+	padding-top: 2rem;
+}
+
 .dd-section-heading {
 	width: min(100%, 70rem);
 	margin: 0 auto 2.5rem;
@@ -194,6 +206,11 @@ img {
 	margin: 1rem 0 0;
 	font-size: 1.02rem;
 	line-height: 1.6;
+}
+
+.dd-section-heading-stockists p {
+	max-width: 30rem;
+	color: rgba(49, 22, 18, 0.72);
 }
 
 .dd-cta {
@@ -280,6 +297,229 @@ img {
 	text-underline-offset: 0.18em;
 }
 
+.dd-stockists-layout {
+	display: grid;
+	grid-template-columns: minmax(19rem, 23rem) minmax(0, 1fr);
+	gap: 1.4rem;
+	align-items: start;
+}
+
+.dd-stockists-panel {
+	width: min(100%, 70rem);
+	margin: 0 auto;
+	padding: 1.5rem;
+	border-radius: 0.75rem;
+	background: rgba(255, 248, 240, 0.74);
+	box-shadow: 0 1.5rem 3rem rgba(98, 38, 11, 0.14);
+}
+
+.dd-stockists-sidebar {
+	padding-top: 0.6rem;
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	align-self: stretch;
+}
+
+.dd-stockists-map-shell {
+	display: grid;
+	gap: 1rem;
+	padding-top: 18rem;
+}
+
+.dd-stockists-map-frame {
+	display: grid;
+	gap: 1rem;
+	position: sticky;
+	top: 10.5rem;
+}
+
+.dd-stockists-map {
+	position: relative;
+	overflow: hidden;
+	min-height: 38.5rem;
+	border-radius: 0.45rem;
+	background: #e8e0cf;
+}
+
+.dd-stockists-map-note {
+	margin: 0;
+	padding: 0.9rem 1rem;
+	border-radius: 0.4rem;
+	background: rgba(255, 255, 255, 0.72);
+	font-size: 0.82rem;
+	line-height: 1.5;
+	box-shadow: 0 0.9rem 1.8rem rgba(98, 38, 11, 0.08);
+}
+
+.dd-stockists-list {
+	display: grid;
+	gap: 0;
+	margin-top: 1.2rem;
+	max-height: calc(100vh - 15rem);
+	overflow-y: auto;
+	padding-right: 0.75rem;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(49, 22, 18, 0.3) transparent;
+}
+
+.dd-stockists-list::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+.dd-stockists-list::-webkit-scrollbar-thumb {
+	border-radius: 999px;
+	background: rgba(49, 22, 18, 0.28);
+}
+
+.dd-card-stockist {
+	min-height: 0;
+	padding: 1.4rem 0 1.25rem;
+	border-radius: 0;
+	border-top: 1px solid rgba(49, 22, 18, 0.08);
+	background: transparent;
+	box-shadow: none;
+	cursor: pointer;
+	transition: opacity 180ms ease;
+}
+
+.dd-card-stockist h3 {
+	margin: 0;
+	font-size: 1.28rem;
+	font-weight: 700;
+}
+
+.dd-card-stockist p {
+	margin-top: 0.22rem;
+	color: rgba(49, 22, 18, 0.82);
+	font-size: 0.98rem;
+	line-height: 1.45;
+}
+
+.dd-card-stockist.is-active h3 {
+	color: var(--dd-orange-deep);
+}
+
+.dd-stockists-card-top {
+	display: grid;
+	grid-template-columns: 1.6rem minmax(0, 1fr);
+	gap: 1rem;
+	align-items: start;
+}
+
+.dd-stockists-card-pin {
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	margin-top: 0.25rem;
+	border: 0.18rem solid #35312d;
+	border-radius: 50% 50% 50% 0;
+	transform: rotate(-45deg);
+}
+
+.dd-stockists-card-pin::after {
+	content: "";
+	position: absolute;
+	inset: 0.2rem;
+	border-radius: 50%;
+	background: #35312d;
+}
+
+.dd-stockists-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 999px;
+	background: rgba(49, 22, 18, 0.08);
+	color: rgba(49, 22, 18, 0.84);
+	font-size: 1.1rem;
+	text-decoration: none;
+	transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.dd-stockists-link:hover,
+.dd-stockists-link:focus-visible {
+	background: rgba(221, 65, 19, 0.14);
+	color: var(--dd-orange-deep);
+	transform: translateY(-1px);
+}
+
+.dd-stockists-links {
+	display: flex;
+	align-items: center;
+	gap: 0.55rem;
+	flex-wrap: nowrap;
+}
+
+.dd-card-stockist .dd-card-index {
+	margin-top: 0.9rem;
+	min-width: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	font-size: 0.76rem;
+	justify-content: flex-start;
+	color: rgba(49, 22, 18, 0.52);
+}
+
+.dd-stockists-marker {
+	display: grid;
+	place-items: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-left: -0.8rem;
+	margin-top: -1.6rem;
+	border-radius: 50% 50% 50% 0;
+	background: #2f2a27;
+	transform: rotate(-45deg);
+	box-shadow: 0 0.75rem 1.4rem rgba(49, 22, 18, 0.28);
+	cursor: pointer;
+	transition: background-color 180ms ease, scale 180ms ease;
+}
+
+.dd-stockists-marker.is-active {
+	background: var(--dd-orange-deep);
+	scale: 1.08;
+}
+
+.dd-stockists-marker-core {
+	width: 0.46rem;
+	height: 0.46rem;
+	border-radius: 50%;
+	background: #fff5e8;
+	transform: rotate(45deg);
+}
+
+.dd-stockists-cluster-marker {
+	display: grid;
+	place-items: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	padding: 0 0.7rem;
+	margin-left: -1.25rem;
+	margin-top: -1.25rem;
+	border-radius: 999px;
+	background: rgba(47, 42, 39, 0.94);
+	color: #fff5e8;
+	font-size: 0.88rem;
+	font-weight: 700;
+	box-shadow: 0 0.75rem 1.4rem rgba(49, 22, 18, 0.28);
+	cursor: pointer;
+}
+
+.dd-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
 @keyframes dd-rise {
 	from {
 		opacity: 0;
@@ -296,6 +536,22 @@ img {
 	.dd-card-grid {
 		grid-template-columns: 1fr;
 	}
+
+	.dd-stockists-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.dd-stockists-panel {
+		padding: 1rem;
+	}
+
+	.dd-stockists-map-frame {
+		position: static;
+	}
+
+	.dd-stockists-map-shell {
+		padding-top: 0;
+	}
 }
 
 @media (max-width: 720px) {
@@ -305,18 +561,6 @@ img {
 		padding: 1.2rem 1rem;
 	}
 
-	.dd-page-main {
-		padding-top: 4.5rem;
-	}
-
-	.dd-nav a {
-		font-size: 0.76rem;
-		letter-spacing: 0.09em;
-	}
-
-	.dd-hero-stage {
-		min-height: 100vh;
-	}
 
 	.dd-hero-copy {
 		padding: 6rem 1rem 2rem;
@@ -328,5 +572,19 @@ img {
 
 	.dd-section {
 		padding: 4rem 1rem;
+	}
+
+		.dd-stockists-map-shell {
+			padding-top: 0;
+		}
+
+		.dd-stockists-list {
+			max-height: none;
+			padding-right: 0;
+			overflow: visible;
+		}
+
+	.dd-stockists-map {
+		min-height: 25rem;
 	}
 }
